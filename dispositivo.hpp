@@ -5,6 +5,11 @@
 
 class Dispositivo
 {
+private:
+    std::string _marca;
+    std::string _modelo;
+    int _referencia;
+
 public:
     Dispositivo();
     Dispositivo(std::string marca, std::string modelo, int referencia);
@@ -16,10 +21,6 @@ public:
     void set_referencia(int referencia);
     virtual ~Dispositivo();
 
-private:
-    std::string _marca;
-    std::string _modelo;
-    int _referencia;
 };
 
 #endif

@@ -17,6 +17,12 @@ Notebook::Notebook(uint32_t mem_gb,
 		   std::string marca,
 		   std::string modelo,
 		   int referencia) :
+		   
+		   _mem_gb(mem_gb),
+		   _processador(processador),
+		   _freq_processador(_freq_processador),
+		   _armazenamento(armazenamento),
+		   _tipo_armazenamento(tipo_armazenamento),
 	   Dispositivo(marca, modelo, referencia)
 {}
 

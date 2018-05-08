@@ -5,6 +5,14 @@
 
 class Notebook : public Dispositivo
 {
+private:
+    uint32_t _mem_gb;
+    std::string _processador;
+    double _freq_processador;
+    uint32_t _armazenamento;
+    std::string _tipo_armazenamento;
+
+
 public:
     Notebook();
     Notebook(uint32_t mem_gb,
@@ -30,13 +38,6 @@ public:
     void set_processador(std::string processador);
     void set_armazenamento(uint32_t armazenamento);
     void set_tipo_armazenamento(std::string tipo_armazenamento);
-
-private:
-    uint32_t _mem_gb;
-    std::string _processador;
-    double _freq_processador;
-    uint32_t _armazenamento;
-    std::string _tipo_armazenamento;
 
 };
 

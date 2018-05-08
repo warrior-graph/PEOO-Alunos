@@ -6,6 +6,15 @@
 
 class Celular : public Dispositivo
 {
+
+private:
+    std::string _sistema_operacional;
+    double _tam_tela_polegada;
+    double _resolucao_camera_m_pixel;
+    uint32_t _mem_interna_gb;
+    uint32_t _mem_ram_gb;
+    std::string _processador;
+
 public:
     Celular();
     Celular(std::string sistema_operacional,
@@ -13,7 +22,10 @@ public:
 	    double resolucao_camera_m_pixel,
 	    uint32_t mem_interna_gb,
 	    uint32_t mem_ram_gb,
-	    std::string processador);
+	    std::string processador,
+	    std::string marca,
+	    std::string modelo,
+	    int referencia);
     
     virtual ~Celular();
     
@@ -24,18 +36,14 @@ public:
     uint32_t get_mem_ram_gb();
     std::string get_processador();
 
+    void set_sistema_operacional(std::string sistema_operacional);
     void set_tam_tela_polegada(double tam_tela_polegada);
     void set_resolucao_camera_m_pixel(double resolucao_camera_m_pixel);
     void set_mem_interna_gb(uint32_t mem_interna_gb);
     void set_mem_ram_gb(uint32_t mem_ram_gb);
     void set_processador(std::string processador);
 
-private:
-    double _tam_tela_polegada;
-    double _resolucao_camera_m_pixel;
-    uint32_t _mem_interna_gb;
-    uint32_t _mem_ram_gb;
-    std::string _processador;
+
 };
 
 #endif
