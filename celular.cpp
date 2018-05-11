@@ -23,7 +23,7 @@ Celular::Celular(std::string sistema_operacional,
 		 _resolucao_camera_m_pixel(resolucao_camera_m_pixel),
 		 _mem_interna_gb(mem_ram_gb),
 		 _mem_ram_gb(mem_ram_gb),
-		 _processador(_processador),
+		 _processador(processador),
 	 Dispositivo(marca, modelo, referencia)
 {}
 

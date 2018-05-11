@@ -1,6 +1,6 @@
 CXX = g++
 RM = rm -f
-CXXFLAGS = -Wall -O3
+CXXFLAGS = -Wall -Wno-reorder -O3
 
 SRCS = main.cpp dispositivo.cpp celular.cpp notebook.cpp
 OBJS = $(subst .cpp,.o,$(SRCS))
@@ -21,7 +21,7 @@ celular.o: celular.cpp celular.hpp
 	$(CXX) $(CXXFLAGS) -c celular.cpp
 
 notebook.o: notebook.cpp notebook.hpp
-	$(CXX) $(CXXFLAGS) -c notebook.cpp
+	$(CXX) $(CXXFLAGS) -c notebook.cpp notebook.hpp
 clean:
 	$(RM) $(OBJS)
 

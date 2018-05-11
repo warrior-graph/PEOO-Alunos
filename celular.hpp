@@ -6,7 +6,6 @@
 
 class Celular : public Dispositivo
 {
-
 private:
     std::string _sistema_operacional;
     double _tam_tela_polegada;
@@ -42,6 +41,7 @@ public:
     void set_mem_interna_gb(uint32_t mem_interna_gb);
     void set_mem_ram_gb(uint32_t mem_ram_gb);
     void set_processador(std::string processador);
+
 
 
 };
